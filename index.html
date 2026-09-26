@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovens com Propósito — JCP | Existe vida no sertão da Paraíba</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="O Jovens com Propósito (JCP) é um movimento cristão formado por jovens do sertão à capital da Paraíba, despertando uma geração para a fé, comunhão e serviço.">
+  <meta name="keywords" content="Jovens com Propósito, JCP, Sertão da Paraíba, Missão Cristã, Evangelização, Discipulado, Juventude Cristã">
+  <meta name="author" content="Projeto Jovens com Propósito">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jovens com Propósito — JCP | Existe vida no sertão da Paraíba">
+  <meta property="og:description" content="Um movimento de fé, comunhão, evangelização e serviço levantando jovens no sertão e na capital.">
+  <meta property="og:image" content="assets/brand/jcp_banner_hero.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/brand/jcp_simbolo_isolado.svg">
+
+  <!-- Google Fonts (Plus Jakarta Sans & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos da Landing Page -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Supabase CDN (opcional para sincronização de edições) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="bg-night">
+
+  <!-- Barra de progresso de leitura suave no topo -->
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+  <!-- ==============================================================================
+       HEADER / NAVEGAÇÃO INSTITUCIONAL COM MENU COMPLETO
+       ============================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-link" aria-label="Jovens com Propósito Home">
+        <img src="assets/brand/jcp_logo_principal_vetorial.svg" alt="Logo Jovens com Propósito" class="brand-logo-img">
+      </a>
+      
+      <!-- Menu de Navegação Desktop -->
+      <nav aria-label="Menu Principal">
+        <ul class="nav-menu-desktop">
+          <li><a href="#geracao" class="nav-link">A Geração</a></li>
+          <li><a href="#porque-existimos" class="nav-link">Por que existimos</a></li>
+          <li><a href="#historia" class="nav-link">História</a></li>
+          <li><a href="#proposito" class="nav-link">Propósito</a></li>
+          <li><a href="#o-ide" class="nav-link">O IDE</a></li>
+          <li><a href="#como-acontece" class="nav-link">Como Funciona</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+          <li><a href="#contribua" class="nav-link">Contribua</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-primary btn-header-cta" data-open-modal="modal-participar" id="header-cta-btn">
+          QUERO PARTICIPAR
+        </button>
+
+        <!-- Botão Toggle Menu Mobile -->
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Drawer Menu Mobile -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navegação Mobile">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Início</a></li>
+      <li><a href="#geracao" class="mobile-nav-link">A Geração</a></li>
+      <li><a href="#porque-existimos" class="mobile-nav-link">Por que existimos</a></li>
+      <li><a href="#historia" class="mobile-nav-link">Nossa História</a></li>
+      <li><a href="#proposito" class="mobile-nav-link">Missão & Visão</a></li>
+      <li><a href="#o-ide" class="mobile-nav-link">O IDE</a></li>
+      <li><a href="#como-acontece" class="mobile-nav-link">Como Acontece</a></li>
+      <li><a href="#experiencia" class="mobile-nav-link">Galeria & Momentos</a></li>
+      <li><a href="#contribua" class="mobile-nav-link">Contribua</a></li>
+    </ul>
+
+    <div>
+      <button class="btn-primary" style="width: 100%; font-size: 0.95rem; padding: 12px 20px;" data-open-modal="modal-participar">
+        FAÇA PARTE DO JCP
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==============================================================================
+         01 — HERO SECTION (COM ANIMAÇÃO SUAVE DE IMAGEM KEN BURNS)
+         ============================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-layer">
+        <img src="assets/images/hero_worship.jpg" alt="Jovens em louvor e oração autêntica" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span class="hero-badge-text">Movimento Cristão &bull; Sertão à Capital</span>
+          </div>
+
+          <h1 class="hero-title">
+            JOVENS COM
+            <span class="highlight">PROPÓSITO</span>
+          </h1>
+
+          <p class="hero-lead">
+            Deus estabeleceu um propósito para cada vida. Um movimento formado por jovens de diferentes cidades, unidos para despertar uma geração adormecida, fortalecer a comunhão e servir com compromisso.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-primary" data-open-modal="modal-participar" id="hero-btn-participar">
+              QUERO PARTICIPAR
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+            <a href="#geracao" class="btn-secondary" id="hero-btn-conhecer">
+              CONHEÇA O PROJETO
+            </a>
+          </div>
+
+          <a href="#geracao" class="hero-scroll-indicator" aria-label="Rolar para próxima seção">
+            <span class="hero-scroll-line"></span>
+            Role para conhecer nossa história
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         02 — UMA GERAÇÃO COM PROPÓSITO
+         ============================================================================== -->
+    <section class="section-editorial bg-night" id="geracao">
+      <div class="container">
+        <div class="manifesto-grid">
+          <div class="reveal-left">
+            <div class="section-kicker">CONCEITO CENTRAL</div>
+            <h2 class="editorial-quote">
+              NÃO VIVEMOS DE FORMA ALEATÓRIA. VIVEMOS COM <span>DIREÇÃO, FÉ E CONVICÇÃO.</span>
+            </h2>
+            <p class="lead-editorial">
+              Somos jovens vindos de todas as cidades, do sertão à capital, carregando em nossos corações histórias diferentes, realidades distintas e experiências únicas.
+            </p>
+            <p class="text-editorial">
+              Ainda assim, algo nos une de forma profunda: o entendimento claro do propósito que Deus estabeleceu para cada uma de nossas vidas. Acreditamos que a salvação é individual, mas a caminhada nunca foi feita para ser solitária. Juntos, nos tornamos mais fortes, mais firmes e mais preparados para cumprir o chamado que recebemos.
+            </p>
+          </div>
+
+          <div class="editorial-image-frame reveal-right">
+            <img src="assets/images/comunhao_roda.jpg" alt="Comunhão sincera e leitura da Palavra em círculo" loading="lazy">
+            <div class="editorial-image-caption">
+              Comunhão, apoio mútuo e fortalecimento coletivo na fé
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         03 — POR QUE EXISTIMOS?
+         ============================================================================== -->
+    <section class="section-editorial bg-light" id="porque-existimos">
+      <div class="container">
+        <div class="why-grid">
+          <div class="editorial-image-frame reveal-left">
+            <img src="assets/images/sertao_mission.jpg" alt="Jovens caminhando nas estradas do sertão com Bíblias" loading="lazy">
+            <div class="editorial-image-caption" style="background: linear-gradient(0deg, rgba(14,21,34,0.92) 0%, transparent 100%);">
+              Sertão Paraibano • Onde a semente foi gerada
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <div class="section-kicker light">O CONTEXTO & O CLAMOR</div>
+            <h2 class="section-title-editorial dark">POR QUE EXISTIMOS?</h2>
+            
+            <p class="lead-editorial">
+              O projeto nasceu com o desejo de despertar jovens para a fé, fortalecer a comunhão e incentivar uma caminhada de serviço, dedicação e compromisso.
+            </p>
+
+            <p class="text-editorial">
+              Muitos jovens estavam dispersos, desmotivados ou adormecidos na fé em suas rotinas e realidades locais. Ao mesmo tempo, havia uma sede espiritual crescente e um anseio coletivo por reavivamento genuíno que precisava de direção, suporte e unidade.
+            </p>
+
+            <p class="text-editorial">
+              Mais do que apenas reunir pessoas em programações passageiras, o JCP foi levantado para construir uma caminhada coletiva sólida, onde cada jovem reconhece que foi alcançado por Deus para ser canal de vida em sua igreja local e em sua comunidade.
+            </p>
+
+            <div class="why-feature-block">
+              <p>“Existe vida no sertão da Paraíba. E essa vida pulsa quando a juventude desperta para o seu propósito eterno.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         04 — NOSSA HISTÓRIA
+         ============================================================================== -->
+    <section class="section-editorial bg-night" id="historia">
+      <div class="container">
+        <div class="history-intro reveal-on-scroll">
+          <div class="section-kicker">TRAJETÓRIA REAL</div>
+          <h2 class="section-title-editorial">NOSSA HISTÓRIA</h2>
+          <p class="lead-editorial">
+            Quando Deus inicia algo, Ele mesmo capacita, direciona e acrescenta tudo aquilo que é necessário para que o Seu propósito se cumpra.
+          </p>
+        </div>
+
+        <div class="history-timeline">
+          <!-- Marco 1 -->
+          <div class="timeline-milestone reveal-on-scroll delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-box timeline-content">
+              <div class="timeline-tag">O Chamado Inicial</div>
+              <h3 class="timeline-title">A Sensibilidade de Pedro</h3>
+              <p class="timeline-text">
+                O projeto nasceu no coração de um jovem chamado Pedro, que, sensível à voz de Deus, foi guiado e despertado com um propósito claro: alcançar e levantar outros jovens que estavam dispersos e adormecidos na fé.
+              </p>
+            </div>
+            <div class="timeline-meta"></div>
+          </div>
+
+          <!-- Marco 2 -->
+          <div class="timeline-milestone reveal-on-scroll delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-box timeline-content">
+              <div class="timeline-tag">Os Primeiros Passos</div>
+              <h3 class="timeline-title">Encontros Diários às 22h</h3>
+              <p class="timeline-text">
+                Movido por essa direção, Pedro deu o primeiro passo iniciando um grupo online e convidando jovens de igrejas de regiões próximas para participarem de encontros que aconteciam diariamente às 22h.
+              </p>
+            </div>
+            <div class="timeline-meta"></div>
+          </div>
+
+          <!-- Marco 3 -->
+          <div class="timeline-milestone reveal-on-scroll delay-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-box timeline-content">
+              <div class="timeline-tag">O Crescimento</div>
+              <h3 class="timeline-title">Uma Sede Espiritual Coletiva</h3>
+              <p class="timeline-text">
+                O que começou de forma simples logo revelou algo muito maior. À medida que novos jovens foram chegando, ficou evidente que havia uma sede espiritual crescente e um desejo coletivo de reavivamento.
+              </p>
+            </div>
+            <div class="timeline-meta"></div>
+          </div>
+
+          <!-- Marco 4 -->
+          <div class="timeline-milestone reveal-on-scroll delay-4">
+            <div class="timeline-dot"></div>
+            <div class="timeline-box timeline-content">
+              <div class="timeline-tag">A Liderança e Unidade</div>
+              <h3 class="timeline-title">Pessoas Somando com Amor</h3>
+              <p class="timeline-text">
+                Diante dessa expansão, surgiu a necessidade de organização, cuidado e liderança. Em oração, foram buscadas pessoas que pudessem somar com dons e disposição.
+              </p>
+              <div class="leaders-mention">
+                Foi nesse processo que chegaram jovens como Kelyane, Esther, Gilmara, Letícia, Guilherme, Sara e Ezequiel, fortalecendo a visão pela expansão do Reino.
+              </div>
+            </div>
+            <div class="timeline-meta"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         05 — NOSSO PROPÓSITO
+         ============================================================================== -->
+    <section class="section-editorial bg-night" id="proposito" style="border-top: 1px solid rgba(255,255,255,0.06);">
+      <div class="container">
+        <div class="reveal-on-scroll" style="max-width: 720px; margin-bottom: 30px;">
+          <div class="section-kicker">FUNDAMENTOS INEGOCIÁVEIS</div>
+          <h2 class="section-title-editorial">NOSSO PROPÓSITO</h2>
+          <p class="lead-editorial">
+            Reconhecemos que cada jovem carrega talentos e chamados que muitas vezes estão adormecidos. Trabalhamos para despertar essa identidade no Reino de Deus.
+          </p>
+        </div>
+
+        <div class="purpose-grid">
+          <!-- MISSÃO -->
+          <div class="purpose-pillar reveal-on-scroll delay-1">
+            <div class="purpose-number">01</div>
+            <h3 class="purpose-heading">MISSÃO</h3>
+            <p class="purpose-desc">
+              Glorificar a Deus em tudo o que fazemos, vivendo e proclamando o Evangelho de forma verdadeira, relevante e transformadora. Despertar a identidade de cada jovem, desenvolvendo seus dons para servir com excelência nas igrejas locais e na sociedade.
+            </p>
+          </div>
+
+          <!-- VISÃO -->
+          <div class="purpose-pillar reveal-on-scroll delay-2">
+            <div class="purpose-number">02</div>
+            <h3 class="purpose-heading">VISÃO</h3>
+            <p class="purpose-desc">
+              Alcançar jovens do sertão à capital da Paraíba e além, erguendo uma geração fundamentada na Palavra, consolidada na comunhão e ativa na evangelização. Ver jovens servindo com paixão viva e liderando com integridade nas suas cidades.
+            </p>
+          </div>
+
+          <!-- PROPÓSITO -->
+          <div class="purpose-pillar reveal-on-scroll delay-3">
+            <div class="purpose-number">03</div>
+            <h3 class="purpose-heading">PROPÓSITO</h3>
+            <p class="purpose-desc">
+              Construir uma caminhada coletiva que não deixe ninguém para trás. Estender a mão nas dificuldades, amadurecer na fé em unidade e conduzir cada vida a compreender e cumprir aquilo que Deus sonhou para ela antes da fundação do mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         06 — O IDE: IR • SERVIR • EVANGELIZAR • FAZER DISCÍPULOS
+         ============================================================================== -->
+    <section class="section-editorial ide-section" id="o-ide">
+      <img src="assets/images/evangelismo_rua.jpg" alt="Evangelismo de rua nas cidades paraibanas" class="ide-bg-image">
+      <div class="container">
+        <div class="ide-content-wrapper reveal-left">
+          <div class="section-kicker">A GRANDE COMISSÃO</div>
+          <h2 class="section-title-editorial">O IDE</h2>
+          <p class="lead-editorial">
+            Nossa fé não se encerra dentro de quatro paredes. O Evangelho se manifesta quando nos levantamos para ir ao encontro de quem precisa de esperança e verdade.
+          </p>
+
+          <div class="ide-pillars-grid">
+            <div class="ide-pillar-item">
+              <h3 class="ide-pillar-word">IR</h3>
+              <p class="ide-pillar-text">
+                Romper a zona de conforto e avançar pelas ruas, bairros e cidades do sertão e da capital, respondendo com prontidão à direção do Espírito Santo.
+              </p>
+            </div>
+
+            <div class="ide-pillar-item">
+              <h3 class="ide-pillar-word">SERVIR</h3>
+              <p class="ide-pillar-text">
+                Atuar de maneira prática e humilde, apoiando as igrejas locais, amparando os necessitados e colocando nossos dons à disposição da obra.
+              </p>
+            </div>
+
+            <div class="ide-pillar-item">
+              <h3 class="ide-pillar-word">EVANGELIZAR</h3>
+              <p class="ide-pillar-text">
+                Anunciar com clareza, ousadia e amor o Evangelho do Reino de Deus, ministrando cura, reconciliação e o perdão disponível em Cristo Jesus.
+              </p>
+            </div>
+
+            <div class="ide-pillar-item">
+              <h3 class="ide-pillar-word">FAZER DISCÍPULOS</h3>
+              <p class="ide-pillar-text">
+                Cuidar dos que chegam, acompanhar o amadurecimento na fé e capacitar novos jovens para que também se tornem proclamadores da verdade.
+              </p>
+            </div>
+          </div>
+
+          <div class="verse-block">
+            <p>“Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai e do Filho e do Espírito Santo...”</p>
+            <cite>Mateus 28:19</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         07 — COMO O JCP ACONTECE
+         ============================================================================== -->
+    <section class="section-editorial bg-light" id="como-acontece">
+      <div class="container">
+        <div class="reveal-on-scroll" style="max-width: 720px; margin-bottom: 24px;">
+          <div class="section-kicker light">DINÂMICA DO PROJETO</div>
+          <h2 class="section-title-editorial dark">COMO O JCP ACONTECE</h2>
+          <p class="lead-editorial">
+            Uma caminhada integrada entre momentos online de fortalecimento contínuo e encontros presenciais de impacto nas comunidades locais.
+          </p>
+        </div>
+
+        <div class="happens-grid">
+          <!-- ONLINE -->
+          <div class="happens-card reveal-left">
+            <span class="happens-badge">FORMATO ONLINE &bull; CONTINUIDADE</span>
+            <h3 class="happens-title">DEVOCIONAIS VIRTUAIS</h3>
+            
+            <div class="happens-schedule">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              Terças e Quintas-feiras &bull; 22h00
+            </div>
+
+            <p class="text-editorial">
+              Um tempo separado especialmente para buscar a presença de Deus mesmo à distância, unindo jovens de diferentes municípios que não poderiam se encontrar fisicamente toda semana.
+            </p>
+
+            <ul class="happens-list">
+              <li>Momentos intensos de oração congregacional e intercessão;</li>
+              <li>Louvor genuíno e adoração sincera;</li>
+              <li>Ministração e estudo prático da Palavra de Deus;</li>
+              <li>Fortalecimento dos laços fraternos e comunhão entre cidades.</li>
+            </ul>
+          </div>
+
+          <!-- PRESENCIAL -->
+          <div class="happens-card reveal-right">
+            <span class="happens-badge">FORMATO PRESENCIAL &bull; IMPACTO</span>
+            <h3 class="happens-title">EDIÇÕES & AÇÕES LOCAIS</h3>
+
+            <div class="happens-schedule">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Igrejas Locais, Praças & Ruas da Paraíba
+            </div>
+
+            <p class="text-editorial">
+              Ao longo do ano, realizamos edições e encontros presenciais nas igrejas locais, conforme somos convidados por pastores e líderes de diferentes regiões do sertão e capital.
+            </p>
+
+            <ul class="happens-list">
+              <li>Cultos de comunhão, adoração e ministração profunda;</li>
+              <li>Evangelismo nas ruas e praças levando esperança;</li>
+              <li>Ações sociais de cuidado e doação às famílias do sertão;</li>
+              <li>Oficinas ministeriais para potencializar os dons da juventude.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         09 — EXPERIÊNCIA VISUAL EDITORIAL COM NOVAS FOTOGRAFIAS
+         ============================================================================== -->
+    <section class="section-editorial bg-night" id="experiencia">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 680px; margin: 0 auto 36px;">
+          <div class="section-kicker" style="justify-content: center;">REGISTROS DO CHAMADO</div>
+          <h2 class="section-title-editorial">A EXPERIÊNCIA JCP</h2>
+          <p class="lead-editorial">
+            Imagens que traduzem a verdade de uma juventude que consagrou seus talentos ao Reino.
+          </p>
+        </div>
+
+        <div class="gallery-editorial">
+          <!-- Imagem 1: Hero Worship -->
+          <div class="gallery-card gallery-item-large reveal-on-scroll delay-1">
+            <img src="assets/images/hero_worship.jpg" alt="Jovens em adoração" loading="lazy">
+            <div class="gallery-caption-overlay">
+              <div class="gallery-caption-sub">ADORAÇÃO GENUÍNA</div>
+              <h3 class="gallery-caption-title">Corações rendidos à soberania de Deus</h3>
+            </div>
+          </div>
+
+          <!-- Imagem 2: Oração e Unidade em Comunhão (Nova Fotografia) -->
+          <div class="gallery-card gallery-item-portrait tall reveal-on-scroll delay-2">
+            <img src="assets/images/oracao_comunhao.jpg" alt="Jovens orando de mãos dadas" loading="lazy">
+            <div class="gallery-caption-overlay">
+              <div class="gallery-caption-sub">INTERCESSÃO E AMOR</div>
+              <h3 class="gallery-caption-title">Unidos em oração e quebrantamento</h3>
+            </div>
+          </div>
+
+          <!-- Imagem 3: Evangelismo na rua -->
+          <div class="gallery-card gallery-item-half reveal-on-scroll delay-3">
+            <img src="assets/images/evangelismo_rua.jpg" alt="Evangelismo de rua nas cidades paraibanas" loading="lazy">
+            <div class="gallery-caption-overlay">
+              <div class="gallery-caption-sub">COMPAIXÃO NAS RUAS</div>
+              <h3 class="gallery-caption-title">Ouvir, acolher e orar pelas famílias</h3>
+            </div>
+          </div>
+
+          <!-- Imagem 4: Missão no Sertão -->
+          <div class="gallery-card gallery-item-half reveal-on-scroll delay-4">
+            <img src="assets/images/sertao_mission.jpg" alt="Jovens no sertão com Bíblias" loading="lazy">
+            <div class="gallery-caption-overlay">
+              <div class="gallery-caption-sub">PASSOS FIRMES</div>
+              <h3 class="gallery-caption-title">Caminhando juntos pelas estradas do sertão</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         10 — CONTRIBUA COM O PROPÓSITO
+         ============================================================================== -->
+    <section class="section-editorial bg-night" id="contribua" style="border-top: 1px solid rgba(255,255,255,0.06);">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 720px; margin: 0 auto 36px;">
+          <div class="section-kicker" style="justify-content: center;">FAÇA PARTE DA MISSÃO</div>
+          <h2 class="section-title-editorial">CONTRIBUA COM O PROPÓSITO</h2>
+          <p class="lead-editorial">
+            O Reino avança através da união de quem ora, de quem oferta e de quem vai. Escolha como você deseja caminhar conosco nesta missão.
+          </p>
+        </div>
+
+        <div class="contribute-cards-grid">
+          <!-- 1. ORANDO -->
+          <div class="contribute-card reveal-on-scroll delay-1">
+            <div>
+              <div class="contribute-icon">🙏</div>
+              <h3 class="contribute-title">CONTRIBUIR ORANDO</h3>
+              <p class="contribute-desc">
+                Assuma um compromisso pessoal de interceder pelo projeto, pela liderança e por cada jovem alcançado. Mobilize também sua célula ou igreja para levantarem um clamor constante.
+              </p>
+            </div>
+            <button class="btn-secondary contribute-btn" data-open-modal="modal-orando" id="btn-orando">
+              ESTOU ORANDO
+            </button>
+          </div>
+
+          <!-- 2. FINANCEIRAMENTE -->
+          <div class="contribute-card reveal-on-scroll delay-2" style="border-color: rgba(0, 140, 255, 0.35); background-color: #0b121e;">
+            <div>
+              <div class="contribute-icon" style="color: #38BDF8;">💰</div>
+              <h3 class="contribute-title">CONTRIBUIR FINANCEIRAMENTE</h3>
+              <p class="contribute-desc">
+                Cada oferta é uma semente plantada que possibilita a realização das edições, logística no sertão, suporte aos materiais e expansão da obra. Contribua via PIX direto.
+              </p>
+            </div>
+            <button class="btn-primary contribute-btn" data-open-modal="modal-pix" id="btn-pix">
+              QUERO CONTRIBUIR
+            </button>
+          </div>
+
+          <!-- 3. INDO -->
+          <div class="contribute-card reveal-on-scroll delay-3">
+            <div>
+              <div class="contribute-icon">🌎</div>
+              <h3 class="contribute-title">CONTRIBUIR INDO</h3>
+              <p class="contribute-desc">
+                Disponha seus dons, talentos e tempo para ir aos campos, atuar no serviço voluntário, evangelizar e participar ativamente das ações presenciais do Jovens com Propósito.
+              </p>
+            </div>
+            <button class="btn-secondary contribute-btn" data-open-modal="modal-participar" id="btn-indo">
+              QUERO CONTRIBUIR INDO
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         11 — PRÓXIMA EDIÇÃO (INTEGRAÇÃO SUPABASE & SEED OFICIAL)
+         ============================================================================== -->
+    <section class="section-editorial edition-section" id="proxima-edicao">
+      <div class="container">
+        <div class="section-kicker">AGENDA DO MOVIMENTO</div>
+        <div id="proxima-edicao-wrapper">
+          <!-- Inserido dinamicamente pelo script js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         12 — FAÇA PARTE (ENCERRAMENTO EMOCIONAL)
+         ============================================================================== -->
+    <section class="cta-closing-section" id="faca-parte">
+      <img src="assets/images/jovens_horizonte.jpg" alt="Jovens olhando o horizonte do sertão com propósito" class="cta-closing-bg">
+      <div class="cta-closing-overlay"></div>
+
+      <div class="container" style="position: relative; z-index: 4;">
+        <div class="cta-closing-content reveal-on-scroll">
+          <div class="section-kicker" style="justify-content: center;">SEU CHAMADO COMEÇA HOJE</div>
+          <h2 class="cta-closing-title">
+            QUAL É O SEU PROPÓSITO?
+          </h2>
+          <p class="cta-closing-lead">
+            Você não foi chamado para caminhar sozinho nem para viver de forma indiferente. Existe um lugar para você neste propósito eterno. Una-se a nós e venha impactar esta geração.
+          </p>
+          <div>
+            <button class="btn-primary" data-open-modal="modal-participar" style="font-size: 0.95rem; padding: 13px 32px;" id="closing-cta-btn">
+              QUERO PARTICIPAR DO JCP
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================================================
+       13 — FOOTER INSTITUCIONAL
+       ============================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/brand/jcp_logo_principal_vetorial.svg" alt="Jovens com Propósito" style="height: 38px; margin-bottom: 12px;">
+          <p>
+            Um movimento de jovens cristãos comprometidos em buscar a Deus, fortalecer a comunhão, proclamar o Evangelho e servir com amor.
+          </p>
+          <p style="font-family: var(--font-kicker); color: var(--color-primary); font-size: 0.8rem; font-weight: 750; margin-top: 10px; letter-spacing: 0.1em; text-transform: uppercase;">
+            “Existe vida no sertão da Paraíba”
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">NAVEGAÇÃO</h3>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#geracao">A Geração</a></li>
+            <li><a href="#porque-existimos">Por que existimos</a></li>
+            <li><a href="#historia">Nossa História</a></li>
+            <li><a href="#proposito">Missão e Visão</a></li>
+            <li><a href="#o-ide">O IDE</a></li>
+            <li><a href="#como-acontece">Como Funciona</a></li>
+            <li><a href="#contribua">Contribua</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">CONTATO & COMUNHÃO</h3>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:projetojovenscomproposito@gmail.com">projetojovenscomproposito@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <a href="https://www.instagram.com/jovenscomproposito" target="_blank" rel="noopener">@jovenscomproposito</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Devocionais: Terças e Quintas às 22h</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Projeto Jovens com Propósito — JCP. Todos os direitos reservados.
+        </div>
+        <div style="font-family: var(--font-kicker); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;">
+          GLORIFICANDO A DEUS ATRAVÉS DA JUVENTUDE
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+       MODAIS INTERATIVOS (ORAÇÃO, PIX, PARTICIPAÇÃO)
+       ============================================================================== -->
+
+  <!-- Modal PIX -->
+  <div class="jcp-modal" id="modal-pix" role="dialog" aria-modal="true" aria-labelledby="modal-pix-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Fechar modal">&times;</button>
+      <h3 class="modal-title" id="modal-pix-title">CONTRIBUIÇÃO VIA PIX</h3>
+      <p class="modal-subtitle">
+        Sua contribuição sustenta a realização dos encontros, viagens missionárias pelo sertão e o apoio a jovens e comunidades locais.
+      </p>
+
+      <div class="pix-copy-box">
+        <span class="pix-key-text" id="pix-key-val">projetojovenscomproposito@gmail.com</span>
+        <button class="btn-copy-pix" id="btn-copy-pix">COPIAR PIX</button>
+      </div>
+
+      <div style="font-size: 0.82rem; color: #94A3B8; line-height: 1.5; margin-bottom: 18px; font-weight: 500;">
+        <strong>Tipo de chave:</strong> E-mail<br>
+        <strong>Favorecido:</strong> Projeto Jovens com Propósito<br>
+        <strong>Banco:</strong> Banco do Brasil<br>
+        <strong>Cidade:</strong> Patos - PB
+      </div>
+
+      <button class="btn-secondary" style="width: 100%;" data-close-modal>FECHAR</button>
+    </div>
+  </div>
+
+  <!-- Modal Oração -->
+  <div class="jcp-modal" id="modal-orando" role="dialog" aria-modal="true" aria-labelledby="modal-orando-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Fechar modal">&times;</button>
+      <h3 class="modal-title" id="modal-orando-title">UNIDOS EM ORAÇÃO</h3>
+      <p class="modal-subtitle">
+        Cremos no poder do clamor da igreja. Deixe seu nome ou simplesmente confirme que estará intercedendo por nós.
+      </p>
+
+      <form id="form-orando">
+        <div class="modal-form-group">
+          <label for="orando-nome">Seu Nome (opcional)</label>
+          <input type="text" id="orando-nome" class="modal-input" placeholder="Ex: Lucas Silva">
+        </div>
+        <div class="modal-form-group">
+          <label for="orando-cidade">Sua Cidade / Igreja (opcional)</label>
+          <input type="text" id="orando-cidade" class="modal-input" placeholder="Ex: Patos - PB">
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 8px;">
+          CONFIRMAR: ESTOU ORANDO
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Participar / Contribuir Indo -->
+  <div class="jcp-modal" id="modal-participar" role="dialog" aria-modal="true" aria-labelledby="modal-participar-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Fechar modal">&times;</button>
+      <h3 class="modal-title" id="modal-participar-title">FAÇA PARTE DO JCP</h3>
+      <p class="modal-subtitle">
+        Preencha suas informações para participar dos nossos devocionais online às 22h, saber das próximas edições ou atuar como voluntário nas missões.
+      </p>
+
+      <form id="form-participar">
+        <div class="modal-form-group">
+          <label for="part-nome">Nome Completo *</label>
+          <input type="text" id="part-nome" class="modal-input" required placeholder="Como podemos te chamar?">
+        </div>
+        <div class="modal-form-group">
+          <label for="part-whatsapp">WhatsApp (com DDD) *</label>
+          <input type="tel" id="part-whatsapp" class="modal-input" required placeholder="(83) 99999-9999">
+        </div>
+        <div class="modal-form-group">
+          <label for="part-cidade">Cidade / Estado *</label>
+          <input type="text" id="part-cidade" class="modal-input" required placeholder="Ex: Patos - PB, Pombal, João Pessoa...">
+        </div>
+        <div class="modal-form-group">
+          <label for="part-interesse">Como gostaria de se envolver?</label>
+          <select id="part-interesse" class="modal-input" style="background-color: #121A28;">
+            <option value="devocionais">Participar dos Devocionais Online (22h)</option>
+            <option value="edicoes">Estar presente nas Edições e Encontros</option>
+            <option value="voluntario">Servir como Voluntário / Missões</option>
+            <option value="lider">Sou Líder de Jovens / Pastor</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 8px;">
+          ENVIAR MEU INTERESSE
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

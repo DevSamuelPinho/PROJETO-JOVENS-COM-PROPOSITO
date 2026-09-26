@@ -1,0 +1,53 @@
+--- PAGE 1 ---
+MANUAL DE IDENTIDADE VISUAL
+Paleta de Cores e Exemplos de Aplicação — Projeto JPC
+1. Conceito cromático.
+A identidade utiliza o azul como elemento central, criando uma linguagem tecnológica,
+moderna e profissional. Os tons foram organizados em uma hierarquia para facilitar o uso.
+2. Paleta oficial.
+Azul Principal
+HEX: #008CFF
+RGB: 0, 140, 255
+Destaques, botões, links e elementos principais
+Azul Escuro
+HEX: #0066CC
+RGB: 0, 102, 204
+Títulos, navegação, elementos de apoio
+Azul Médio
+HEX: #008CFE
+RGB: 0, 140, 254
+Gradientes e detalhes
+Azul Profundo
+HEX: #003B73
+RGB: 0, 59, 115
+Fundos escuros e textos de destaque
+Branco
+HEX: #FFFFFF
+RGB: 255, 255, 255
+Fundos claros e textos sobre azul
+Preto
+HEX: #000000
+RGB: 0, 0, 0
+Aplicações monocromáticas e contraste
+Cinza Claro
+HEX: #F2F4F7
+RGB: 242, 244, 247
+Fundos de telas e materiais
+Cinza
+HEX: #667085
+RGB: 102, 112, 133
+Textos secundários
+
+--- PAGE 2 ---
+3. Exemplos de combinação.
+
+--- PAGE 3 ---
+4. Tipografia.
+A identidade utiliza uma combinação de fontes fortes, condensadas e modernas,
+reforçando o caráter jovem e dinâmico do projeto.
+● Teko: títulos e chamadas principais. Ex.: “QUAL É O SEU PROPÓSITO?”
+● Barlow Condensed: subtítulos e informações de destaque. Ex.: “PRÓXIMOS
+EVENTOS”
+● Inter: textos, menus e elementos de interface. Ex.: descrições, datas e botões.
+● SVG personalizado: logotipo e frases especiais. Ex.: “JOVENS COM PROPÓSITO”
+
